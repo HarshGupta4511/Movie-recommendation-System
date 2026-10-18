@@ -168,8 +168,7 @@ def load_data():
             downloaded_file = gdown.download(
                 id=file_id,
                 output=similarity_path,
-                quiet=False,
-                fuzzy=False
+                quiet=False
             )
 
         if not downloaded_file or not os.path.exists(similarity_path):
